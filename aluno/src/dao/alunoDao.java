@@ -16,11 +16,12 @@ import modelo.aluno;
  */
 public class alunoDao {
      public static boolean inserir (aluno objeto) {
-        String sql = "INSERT INTO aluno ( nome, endereco) VALUES (?, ?)";
+        String sql = "INSERT INTO aluno ( nome, sobrenome, codigo) VALUES (?, ?, ?)";
         try {
             PreparedStatement ps = conexao.Conexao.getConexao().prepareStatement(sql);
             ps.setString(1, objeto.getNome());
-            ps.setString(2, objeto.getEndereco());
+            ps.setString(2, objeto.getSobrenome());
+            ps.setInt(3, objeto.getCodigo());
      
             ps.executeUpdate();
             return true;

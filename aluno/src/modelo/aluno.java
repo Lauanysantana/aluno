@@ -38,5 +38,21 @@ public class aluno {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public void setsobrenome(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setnome(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setcodigo(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getSobrenome() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
